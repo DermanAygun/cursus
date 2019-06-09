@@ -32,6 +32,11 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
-#        - { path: ^/user/, role: ROLE_ADMIN }
-        - { path: ^/event/, role: ROLE_ADMIN }
-        - { path: ^/reservation/, role: ROLE_ADMIN }
+        - { path: ^/user/, role: ROLE_ADMIN }
+        - { path: ^/reservering/, role: ROLE_ADMIN }
+        - { path: ^/betaal/, role: ROLE_ADMIN }
+        - { path: ^/kamer/, role: ROLE_ADMIN }
+        - { path: ^/image/, role: ROLE_ADMIN }
+        - { path: ^/extras/, role: ROLE_ADMIN }
+        - { path: ^/soort/, role: ROLE_ADMIN }
+        - { path: ^/seizoen/, role: ROLE_ADMIN }

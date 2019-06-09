@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div>
+        <div class="image_gallery" style="display: flex;">
+                {% for image in images %}
+                        <div class="card" style="width: 18rem; margin: 0 10px;">
+                        <img src="{{ vich_uploader_asset(image, 'imagefile') }}" class="card-img-top">
+                                <div class="card-body">
+                                        <h5 class="card-title">Kamer Naam</h5>
+                                        <p class="card-text">85$ p/n</p>
+                                    <hr>
+                                        <p class="card-text">Extra's</p>
+                                    <p class="card-text">- Double Sized Bed<br>- Fast Wifi</p>
+                                        <a href="#" class="btn btn-primary">Book Now</a>
+                                </div>
+                        </div>
+                {% endfor %}
+        </div>
+</div>
+
+{% endblock %}

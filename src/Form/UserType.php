@@ -23,6 +23,7 @@ class UserType extends AbstractType
             ->add('confirmationToken')
             ->add('passwordRequestedAt')
             ->add('roles')
+            ->add('last_activity_at')
         ;
     }
 
